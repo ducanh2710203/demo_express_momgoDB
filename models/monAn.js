@@ -1,29 +1,23 @@
+const mongoose = require('mongoose');
 
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database');
-
-
-const MonAn = sequelize.define('MonAn', {
-
+const monAnSchema = new mongoose.Schema({
     ten_mon: {
-        type: DataTypes.STRING,
-        allowNull: false
+        type: String,
+        required: true
     },
     mo_ta: {
-        type: DataTypes.TEXT
+        type: String
     },
     gia_ban: {
-        type: DataTypes.DECIMAL(10, 2),
-        allowNull: false
+        type: Number,
+        required: true
     },
     con_hang: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: true
+        type: Boolean,
+        default: true
     }
-
 }, {
-
-    tableName: 'mon_an'
+    timestamps: true
 });
 
-module.exports = MonAn;
+module.exports = mongoose.model('MonAn', monAnSchema);

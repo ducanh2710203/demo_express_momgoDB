@@ -1,26 +1,18 @@
-
+const mongoose = require('mongoose');
 require('dotenv').config();
-const { Sequelize } = require('sequelize');
+
+const mongoUri = process.env.MONGODB_URI || 'mongodb+srv://duc2710203_db_user:7tMklc5mxUGOq5D4@cluster0-ducanh.pwwwarr.mongodb.net/?appName=Cluster0-ducanh';
+
+mongoose.connect(mongoUri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+})
+    .then(() => console.log('✅ Kết nối MongoDB thành công'))
+    .catch(err => console.error('⛔ Lỗi kết nối MongoDB:', err));
+
+module.exports = mongoose;
 
 
-const sequelize = new Sequelize(
-    process.env.DB_DATABASE,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
-        host: process.env.DB_HOST,
-        dialect: 'mysql'
-    }
-);
-
-
-(async () => {
-    try {
-        await sequelize.authenticate();
-        console.log('✅ KẾT NỐI SEQUELIZE THÀNH CÔNG!');
-    } catch (error) {
-        console.error('⛔ LỖI KẾT NỐI SEQUELIZE:', error);
-    }
-})();
-
-module.exports = sequelize;
+//taiKhoan: duc2710203_db_user
+//matkhau: 7tMklc5mxUGOq5D4
+//mongodb+srv://duc2710203_db_user:7tMklc5mxUGOq5D4@cluster0-ducanh.pwwwarr.mongodb.net/?appName=Cluster0-ducanh
