@@ -9,11 +9,13 @@ var usersRouter = require('./routes/users');
 var dishesRouter = require('./routes/dishes');
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./config/swaggerConfig');
+var authRouter = require('./routes/auth');
 
 var app = express();
 require('dotenv').config();
-const sequelize = require('./config/database');
 
+const connectDB = require('./config/database');
+connectDB();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -27,40 +29,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/dishes', dishesRouter);
+app.use('/api/auth', authRouter);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
 
 app.use(function (req, res, next) {
   next(createError(404));
 });
 
-
 app.use(function (err, req, res, next) {
-
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
-
 
   res.status(err.status || 500);
   res.render('error');
 });
 
-
-app.use(function (err, req, res, next) {
-
-});
-
-
-
-(async () => {
-  try {
-
-
-    await sequelize.sync({ force: false });
-    console.log("✅ Đã đồng bộ các Model (tự động tạo bảng).");
-  } catch (error) {
-    console.error("⛔ Lỗi đồng bộ Model:", error);
-  }
-})();
 
 module.exports = app;
