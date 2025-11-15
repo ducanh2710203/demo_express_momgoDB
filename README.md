@@ -21,7 +21,20 @@ Dự án Backend RESTful API phục vụ việc quản lý thực đơn nhà hà
 
 ---
 
-## 📁 Cấu trúc thư mục dự án
+## 📁 Cấu trúc thư mục
+
+    project/
+    │── models/
+    │   └── monAn.js
+    │── routes/
+    │   └── dishes.js
+    │── middleware/
+    │   └── authMiddleware.js
+    │── app.js
+    │── server.js
+    │── package.json
+    │── .env
+    │── README.md
 
 EXPRESS/
 │── bin/
