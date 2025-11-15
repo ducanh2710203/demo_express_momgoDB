@@ -45,28 +45,6 @@ Dự án Backend RESTful API phục vụ việc quản lý thực đơn nhà hà
     │── .env # Biến môi trường (Cần tự tạo)
     │── README.md
 
-EXPRESS/
-│── bin/
-│ └── www # Script khởi động server (entry point)
-│── config/
-│ │── database.js # Cấu hình kết nối MongoDB
-│ └── swaggerConfig.js # Cấu hình Swagger Options
-│── middleware/
-│ └── authMiddleware.js # Middleware kiểm tra JWT Token
-│── models/
-│ │── monAn.js # Schema Mongoose cho Món ăn
-│ └── user.js # Schema Mongoose cho User
-│── routes/
-│ │── auth.js # API Đăng ký / Đăng nhập
-│ │── dishes.js # API CRUD Món ăn
-│ │── index.js # Route trang chủ
-│ └── users.js # Route user mẫu
-│── views/ # Giao diện server (Jade/Pug)
-│── public/ # File tĩnh (CSS, JS, Images)
-│── app.js # File cấu hình chính của Express
-│── .env # Biến môi trường (Cần tự tạo)
-└── README.md # Hướng dẫn sử dụng
-
 ---
 
 ## ⚙️ Cài đặt và Chạy dự án
