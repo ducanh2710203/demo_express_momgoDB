@@ -59,8 +59,10 @@ Authorization: Bearer `<token>`{=html}
 
 ## 🍜 Danh sách API
 
-GET /api/dishes POST /api/dishes PUT /api/dishes/:id DELETE
-/api/dishes/:id
+GET /api/dishes
+POST /api/dishes
+PUT /api/dishes/:id
+DELETE /api/dishes/:id
 
 ## 🧱 Model Món ăn (Mongoose)
 
